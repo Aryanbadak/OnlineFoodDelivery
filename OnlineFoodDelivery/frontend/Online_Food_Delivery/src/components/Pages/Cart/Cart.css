@@ -1,0 +1,147 @@
+.cartt {
+    margin-top: 100px;
+}
+
+.cartt-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: 14px;
+}
+
+.cartt-item-item {
+    margin: 10px 0px;
+    color: black;
+}
+
+.cartt-item-item img {
+    width: 50px;
+}
+
+.cartt hr {
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.cartt-item-item .cross {
+    cursor: pointer;
+}
+
+.cartt-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.cartt-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartt-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cartt-total hr {
+    margin: 10px 0px;
+}
+
+.cartt-total button {
+    border: none;
+    color: white;
+    background-color: red;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.cartt-promocode {
+    flex: 1;
+}
+
+.cartt-promocode p {
+    color: #555;
+}
+
+.cartt-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+.cartt-promocode-input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cartt-promocode-input button {
+    width: 150px;
+    padding: 12px 6px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+@media (max-width:800px) {
+    .cartt-bottom {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .cartt {
+        margin-top: 40px;
+    }
+
+    .cartt-items hr {
+        margin: 0;
+    }
+
+}
+
+@media (max-width:350px) {
+    .cartt-promocode-input button {
+        font-size: 0.8rem;
+        padding: 10px 6px;
+    }
+
+    .cartt-total button {
+        width: 170px;
+        padding: 8px 0px;
+        font-size: 0.8rem;
+    }
+
+    .cartt-items-title p {
+        font-size: 9px;
+        padding-left: 10px;
+    }
+
+    .cartt-item-item p {
+        padding-left: 10px;
+        margin-bottom: 0;
+        gap: 2;
+    }
+}
+
+@media (max-width:500px) {
+    .cartt-item-item img {
+        width: 40px;
+
+    }
+}

@@ -1,0 +1,140 @@
+.food-display h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.food-display-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+.food-card {
+    width: 350px;
+    height: 390px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.card-des-price {
+    display: flex;
+    column-gap: 60px;
+    justify-content: space-between;
+    margin-top: -10px;
+
+}
+
+.card-des-price h6 {
+    opacity: 0.5;
+    margin-left: 2%;
+
+}
+
+.food-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.food-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+
+.card-category {
+    font-size: 14px;
+    color: #666;
+    margin: 3px 0;
+}
+
+.card-price {
+    font-size: 16px;
+    color: #444;
+    opacity: 0.5;
+    margin-right: 1%;
+}
+
+.card-time {
+    font-size: 14px;
+    color: #555;
+    margin-top: -10px;
+    margin-left: 89%;
+
+
+
+}
+
+.name-rating {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name-rating .rating {
+    background-color: #267E3E;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 0px 4px;
+    color: white;
+    font-size: 13px;
+}
+
+.name-rating .rating .star {
+    margin-top: -2px;
+
+}
+
+.footer_lastline {
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+@media (max-width:600px) {
+    .food-display h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .food-display h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:850px) {
+    .food-display-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    .food-card {
+        width: 200px;
+    }
+
+}

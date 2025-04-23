@@ -1,0 +1,144 @@
+.footer {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.zoomato-logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 2%;
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 15px;
+    margin-right: 2%;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 8px 12x;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.dropdown select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-section div {
+    min-width: 150px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section li:hover {
+    color: #ff5a5f;
+    text-decoration: underline;
+}
+
+
+.apple,
+.google {
+    width: 137px;
+}
+
+.social-icons span {
+    padding: 2%;
+    font-size: 25px;
+}
+
+@media (max-width:720px) {
+    .dropdown-container {
+        flex-direction: column;
+    }
+
+    .dropdown {
+        padding: 5px 9px;
+    }
+
+    .dropdown select {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .margin-right {
+        margin-right: 16px;
+    }
+
+    .margin-left {
+        margin-left: 26px;
+    }
+
+    .footer-section .content-xs-center {
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width:575px) {
+    .margin-right {
+        margin-right: 16px;
+    }
+
+    .margin-left {
+        margin-left: 26px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+}

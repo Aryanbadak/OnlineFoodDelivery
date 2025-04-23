@@ -33,7 +33,7 @@
 .navbar-profile-res:hover .nav-profile-dropdown {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
   background-color: #ffff;
   padding: 10px 12px;
   border-radius: 4px;
